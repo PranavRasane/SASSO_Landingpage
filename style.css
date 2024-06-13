@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.logo {
+  text-align: center;
+  top: 35%;
+}
+
+.logo img {
+  display: block;
+  width: 80px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  left: 10%;
+  margin-right: 20px;
+  border: none;
+  position: static;
+  font-size: 16px;
+}
+
+.dropbtn:hover {
+  background-color: transparent;
+  color: #3cb1ff;
+  left: 10%;
+  text-decoration: none;
+  margin-right: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+.dropdown .a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+  border: none;
+  font-size: 16px;
+}
+
+header {
+  width: 1250px;
+  max-width: 80%;
+  left: 2%;
+  margin: left;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+nav {
+  width: 1250px;
+  max-width: 80%;
+  left: 2%;
+  margin: left;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+header .a {
+  left: 15%;
+  margin-right: 40px;
+}
+
+/* dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #666666;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content a:hover {
+  background-color: #3cb1ff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #3cb1ff;
+}
+
+/* dropdown end */
+
+/* carousel */
+.carousel {
+  height: 100vh;
+  margin-top: -50px;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .list .item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+.carousel .list .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel .list .item .content {
+  position: absolute;
+  top: 10%;
+  width: 1140px;
+  max-width: 80%;
+  left: 45%;
+  transform: translateX(-50%);
+  padding-right: 30%;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 5px 10px #0004;
+}
+
+.carousel .list .item .author {
+  color: #3cb1ff;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.carousel .list .item .title,
+.carousel .list .item .topic {
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.carousel .list .item .topic {
+  color: #3cb1ff;
+}
+
+.carousel .list .item .topic_2 {
+  color: rgb(34, 159, 0);
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.carousel .list .item .topic_3 {
+  color: rgb(9, 79, 220);
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.carousel .list .item .topic_4 {
+  color: rgb(253, 218, 148);
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.carousel .list .item .topic_5 {
+  color: rgb(159, 106, 0);
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.carousel .list .item .title {
+  color: #ffffff;
+}
+
+.carousel .list .item .buttons,
+.carousel .list .item .buttons_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.carousel .list .item .buttons button {
+  border: none;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.carousel .list .item .buttons button.hidden {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #eee;
+}
+
+.carousel .list .item .buttons_2 button {
+  border: none;
+  background-color: rgb(159, 106, 0);
+  letter-spacing: 3px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.carousel .list .item .buttons_2 button.hidden {
+  background-color: transparent;
+  border: 1px solid rgb(159, 106, 0);
+  color: rgb(159, 106, 0);
+}
+
+/* thumbail */
+.thumbnail {
+  position: absolute;
+  bottom: 120px;
+  left: 2%;
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+}
+
+.thumbnail .item {
+  width: 140px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.thumbnail .item .content {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.thumbnail .item .content .title {
+  font-weight: 900;
+  color: black;
+  text-shadow: 1px 1px 4px #ffffff;
+}
+
+.thumbnail .item .content .description {
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 4px #ffffff;
+}
+
+.thumbnail .item .content .title_2,
+.thumbnail .item .content .title_3,
+.thumbnail .item .content .title_4,
+.thumbnail .item .content .title_5 {
+  font-weight: 600;
+}
+
+.thumbnail .item .content .description_2 {
+  font-weight: 300;
+}
+
+/* arrows */
+.arrows {
+  position: absolute;
+  top: 90%;
+  right: 56%;
+  z-index: 100;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eee4;
+  border: none;
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.arrows button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* animation */
+.carousel .list .item .active {
+  z-index: 1;
+}
+
+/* animation text in first item */
+.carousel .list .content .author,
+.carousel .list .content .author_2,
+.carousel .list .content .title,
+.carousel .list .content .topic,
+.carousel .list .content .topic_2,
+.carousel .list .content .topic_3,
+.carousel .list .content .topic_4,
+.carousel .list .content .topic_5,
+.carousel .list .content .des,
+.carousel .list .content .buttons,
+.carousel .list .content .buttons_2 {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 0.5s linear 1 forwards;
+}
+
+@keyframes showContent {
+  to {
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.carousel .list .item .active .content .title {
+  animation-delay: 0.6s !important;
+}
+
+.carousel .list .item .active .content .topic,
+.carousel .list .item .active .content .topic_2,
+.carousel .list .item .active .content .topic_3,
+.carousel .list .item .active .content .topic_4,
+.carousel .list .item .active .content .topic_5 {
+  animation-delay: 0.4s !important;
+}
+
+.carousel .list .item .active .content .des {
+  animation-delay: 0.5s !important;
+}
+
+.carousel .list .item .active .content .buttons {
+  animation-delay: 0.6s !important;
+}
+
+.carousel .list .item .active .content .buttons_2 {
+  animation-delay: 0.7s !important;
+}
+
+/* create animation when next click */
+.carousel .list .item.active img {
+  width: 100vw;
+  height: 220px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  border-radius: 30px;
+  /* Increase the 0.2s to increase delay of animation */
+  animation: showImage 0.4s linear 1 forwards;
+}
+
+@keyframes showImage {
+  to {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+.carousel .thumbnail .item.active {
+  overflow: hidden;
+  animation: showThumbnail 0.4s linear 1 forwards;
+}
+
+.carousel .list .item.hidden img {
+  z-index: 100;
+}
+
+@keyframes showThumbnail {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.carousel .thumbnail.active {
+  animation: effectNext 0.4s linear 1 forwards;
+}
+
+@keyframes effectNext {
+  from {
+    transform: translateX(150px);
+  }
+}
+
+/* running time */
+.carousel .time {
+  position: absolute;
+  z-index: 1000;
+  width: 0%;
+  height: 3px;
+  background-color: #003cff;
+  left: 0;
+  top: 0;
+}
+
+.carousel .time,
+.carousel .time {
+  animation: runningTime 0.3s linear 1 forwards;
+}
+
+@keyframes runningTime {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
+/* prev click */
+.carousel .list .item.hidden {
+  z-index: 2;
+}
+
+.carousel .list .item.hidden img {
+  animation: outFrame 0.3s linear 1 forwards;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes outFrame {
+  to {
+    width: 9.2vw;
+    height: 220px;
+    bottom: 120px;
+    left: 1.95%;
+    border-radius: 10.8%;
+  }
+}
+
+.hidden {
+  overflow: hidden;
+  opacity: 0;
+  /* animation: showThumbnail 0.3s linear 1 forwards; */
+}
+/* .item .active */
+.carousel.prev .thumbnail {
+  overflow: hidden;
+  opacity: 0;
+  animation: showThumbnail 0.3s linear 1 forwards;
+}
+
+.carousel.next .arrows button,
+.carousel.prev .arrows button {
+  pointer-events: none;
+}
+
+.carousel .list .item.hidden .content .author,
+.carousel .list .item.hidden .content .author_2,
+.carousel .list .item.hidden .content .title,
+.carousel .list .item.hidden .content .topic,
+.carousel .list .item.hidden .content .topic_2,
+.carousel .list .item.hidden .content .topic_3,
+.carousel .list .item.hidden .content .topic_4,
+.carousel .list .item.hidden .content .topic_5,
+.carousel .list .item.hidden .content .des,
+.carousel .list .item.hidden .content .buttons,
+.carousel .list .item.hidden .content .buttons_2 {
+  animation: contentOut 0.3s linear 1 forwards !important;
+}
+
+@keyframes contentOut {
+  to {
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .carousel .list .item .content {
+    padding-right: 0;
+  }
+
+  .carousel .list .item .content .title {
+    font-size: 30px;
+  }
+}
+
+/* media styles */
+@media screen and (min-width: 679px) {
+  header,
+  nav {
+    width: 1250px;
+    max-width: 80%;
+    left: 2%;
+    margin: left;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropbtn {
+    width: auto;
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 678px) {
+  body {
+    font-size: 12px;
+  }
+
+  header,
+  nav {
+    width: 100%;
+    max-width: 80%;
+    left: 0;
+    top: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    text-align: center;
+    top: 35%;
+  }
+
+  .logo img {
+    display: block;
+    width: 80px;
+  }
+
+  .dropbtn {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .dropdown-content {
+    min-width: 100%;
+  }
+
+  .carousel .list .item .content {
+    width: 90%;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5px;
+  }
+
+  .carousel .list .item .buttons,
+  .carousel .list .item .buttons_2 {
+    grid-template-columns: repeat(1, 100%);
+    gap: 5px;
+  }
+
+  @keyframes outFrame {
+    to {
+      width: 20vw; /* Adjust the width to match the carousel width */
+      height: 200px;
+      bottom: 150px;
+      left: 1.7%;
+      border-radius: 0;
+    }
+  }
+
+  .thumbnail {
+    bottom: auto;
+    top: 60%;
+    width: 50%;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
+  .thumbnail .item {
+    width: 120px;
+    margin-right: 10px;
+  }
+
+  .thumbnail::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .thumbnail::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 3px;
+  }
+
+  .arrows {
+    top: 89%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .arrows button {
+    width: 30px;
+    height: 30px;
+  }
+}
